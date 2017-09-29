@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="BBMS@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>12401</ObjectId>
+      <Current>1</Current>
+    </database>
+    <database id="3" parent="1" name="CAE-2 Preparation">
+      <ObjectId>16393</ObjectId>
+    </database>
+    <database id="4" parent="1" name="sudhnya">
+      <ObjectId>16439</ObjectId>
+    </database>
+    <database id="5" parent="1" name="sudhnya tae2">
+      <ObjectId>16450</ObjectId>
+    </database>
+    <database id="6" parent="1" name="CAE-3 Preparation">
+      <ObjectId>16451</ObjectId>
+    </database>
+    <database id="7" parent="1" name="BBMS">
+      <ObjectId>16452</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="8" parent="1" name="learnaccounts">
+      <ObjectId>16465</ObjectId>
+    </database>
+    <schema id="9" parent="7" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-09-29.22:55:20.311</IntrospectionTimestamp>
+      <IntrospectionStateNumber>581</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="10" parent="7" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <IntrospectionTimestamp>2017-09-29.19:30:42.406</IntrospectionTimestamp>
+      <IntrospectionStateNumber>494</IntrospectionStateNumber>
+    </schema>
+    <schema id="11" parent="7" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <IntrospectionTimestamp>2017-09-29.19:30:42.406</IntrospectionTimestamp>
+      <IntrospectionStateNumber>433</IntrospectionStateNumber>
+    </schema>
+    <schema id="12" parent="7" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+      <IntrospectionTimestamp>2017-09-29.19:30:42.406</IntrospectionTimestamp>
+    </schema>
+    <schema id="13" parent="7" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+      <IntrospectionTimestamp>2017-09-29.19:30:42.406</IntrospectionTimestamp>
+    </schema>
+    <schema id="14" parent="7" name="information_schema">
+      <ObjectId>12113</ObjectId>
+      <IntrospectionTimestamp>2017-09-29.19:30:42.406</IntrospectionTimestamp>
+      <IntrospectionStateNumber>492</IntrospectionStateNumber>
+    </schema>
+    <table id="15" parent="9" name="admin">
+      <ObjectId>16460</ObjectId>
+      <StateNumber>581</StateNumber>
+    </table>
+    <table id="16" parent="9" name="bloodbank">
+      <ObjectId>16453</ObjectId>
+      <StateNumber>580</StateNumber>
+    </table>
+    <column id="17" parent="15" name="uname">
+      <Position>1</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>581</StateNumber>
+    </column>
+    <column id="18" parent="15" name="pword">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>581</StateNumber>
+    </column>
+    <index id="19" parent="15" name="admin_uname_key">
+      <ObjectId>16463</ObjectId>
+      <ColNames>uname</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="20" parent="15" name="admin_uname_key">
+      <ObjectId>16464</ObjectId>
+      <ColNames>uname</ColNames>
+      <UnderlyingIndexName>admin_uname_key</UnderlyingIndexName>
+    </key>
+    <column id="21" parent="16" name="bid">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+    </column>
+    <column id="22" parent="16" name="bname">
+      <Position>2</Position>
+      <DataType>varchar(5)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+    </column>
+    <column id="23" parent="16" name="bquantity">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+    </column>
+    <column id="24" parent="16" name="bprice">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+    </column>
+    <index id="25" parent="16" name="bloodbank_bid_key">
+      <ObjectId>16456</ObjectId>
+      <ColNames>bid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="26" parent="16" name="bloodbank_bname_key">
+      <ObjectId>16458</ObjectId>
+      <ColNames>bname</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="27" parent="16" name="bloodbank_bid_key">
+      <ObjectId>16457</ObjectId>
+      <ColNames>bid</ColNames>
+      <UnderlyingIndexName>bloodbank_bid_key</UnderlyingIndexName>
+    </key>
+    <key id="28" parent="16" name="bloodbank_bname_key">
+      <ObjectId>16459</ObjectId>
+      <ColNames>bname</ColNames>
+      <UnderlyingIndexName>bloodbank_bname_key</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
